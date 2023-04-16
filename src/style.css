@@ -1,0 +1,253 @@
+/** Add any CSS you need to this file. */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  z-index: 99;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  background-color: #333;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.logoName {
+  font-family: 'Russo One', sans-serif;
+  font-size: larger;
+  color: #4caf50;
+  padding-top: 4px;
+}
+
+.bg {
+  width: auto;
+  height: 100vh;
+  border: 1px solid black;
+  opacity: 0.9;
+}
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainText {
+  position: absolute;
+  padding: 20px 50px;
+  font-size: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bolder;
+  color: #fff;
+  line-height: normal;
+  letter-spacing: 3px;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.note {
+  margin-top: 20px;
+  padding: 75px;
+  font-size: 20px;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+}
+
+.heading {
+  height: 70px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  font-size: larger;
+  font-weight: bolder;
+  font-size: 30px;
+  letter-spacing: normal;
+  font-family: 'Russo One', sans-serif;
+}
+
+.men {
+  padding-top: 90px;
+}
+.men {
+  width: 100%;
+}
+.men > .items,
+.women > .items-women {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+}
+
+.sidebar_logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  margin-right: 10px;
+  font-family: 'Russo One', sans-serif;
+  font-weight: bolder;
+}
+
+.footer {
+  margin-top: 30px;
+  background-color: honeydew;
+  padding: 50px;
+}
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+input[type='submit'] {
+  background-color: #4caf50;
+  width: 100%;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+
+.credentials {
+  font-size: 25px;
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+}
+
+/* CONTACT PAGE */
+
+.form-heading {
+  font-size: 50px;
+  font-family: 'Abril Fatface', cursive;
+}
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
+  width: 850px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+input[type='checkbox'] {
+  display: inline-block;
+  width: auto;
+  margin-right: 5px;
+}
+
+input[type='radio'] {
+  margin-right: 10px;
+}
+
+button[type='submit'] {
+  background-color: #4286f4;
+  width: 100%;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #2a5ebd;
+}
+
+small {
+  display: block;
+  margin-top: 5px;
+  color: #777;
+}
+
+#error-msg {
+  color: red;
+  margin-bottom: 10px;
+}
+
+#error-msg:before {
+  content: '⚠ ';
+}
+
+#orderNumberDiv {
+  margin-top: 10px;
+}
+
+#orderNumberDiv label,
+#orderNumberDiv input {
+  display: block;
+}
